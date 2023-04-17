@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: $xl $md;
+  gap: $sm;
+
+  .cc-logo {
+    display: flex;
+    align-items: center;
+    gap: $sm;
+
+    img {
+      width: 3em;
+      height: 3em;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      line-height: 0.8;
+      font-weight: 900;
+    }
+  }
+}

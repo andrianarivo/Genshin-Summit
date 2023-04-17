@@ -1,0 +1,35 @@
+@import 'colors.scss';
+
+.partners {
+  background-color: $dark;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $xl 0;
+  gap: $md;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    border: none;
+    background-color: $accent;
+    width: 20%;
+    height: 3px;
+  }
+
+  .partners-logo {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $lg;
+
+    img {
+      filter: grayscale(100%);
+      width: 12em;
+      height: 3.8em;
+    }
+  }
+}

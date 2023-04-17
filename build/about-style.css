@@ -135,7 +135,7 @@ nav a {
   align-items: center;
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 30%;
   color: #fff;
 }
 .summits .summit-item .info h3 {
@@ -147,6 +147,58 @@ nav a {
 .summits .summit-item img {
   width: 100%;
   height: 100%;
+}
+
+.partners {
+  background-color: #272a31;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 0;
+  gap: 1em;
+}
+.partners h3 {
+  font-size: 1.5rem;
+}
+.partners hr {
+  border: none;
+  background-color: #ec5242;
+  width: 20%;
+  height: 3px;
+}
+.partners .partners-logo {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.partners .partners-logo img {
+  filter: grayscale(100%);
+  width: 12em;
+  height: 3.8em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4em 1em;
+  gap: 0.5em;
+}
+footer .cc-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+footer .cc-logo img {
+  width: 3em;
+  height: 3em;
+}
+footer .cc-logo h3 {
+  font-size: 1.5em;
+  line-height: 0.8;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=about-style.css.map */
