@@ -1,0 +1,39 @@
+@import 'colors.scss';
+
+.header-style {
+  background-color: $lightGrey;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: $xl $md;
+    gap: $sm;
+    font-weight: 700;
+    text-align: center;
+
+    .subtitle {
+      color: $accent;
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      color: $accent;
+      font-size: 2.5rem;
+    }
+
+    .description {
+      background-color: $white;
+      border: 1px solid $grey;
+      padding: $md;
+    }
+
+    .support {
+      font-weight: 500;
+    }
+
+    a {
+      text-decoration: underline;
+      color: $black;
+    }
+  }
+}

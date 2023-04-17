@@ -10,7 +10,12 @@
 @font-face {
   font-family: "Lato";
   src: url(../fonts/lato_bold.ttf);
-  font-weight: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/lato_black.ttf);
+  font-weight: 900;
 }
 * {
   margin: 0;
@@ -38,7 +43,6 @@ nav a {
 .header-style {
   position: relative;
   background: linear-gradient(rgba(82, 82, 82, 0.25), rgba(255, 255, 255, 0));
-  color: #272a31;
 }
 .header-style .header-gradient {
   background-image: url("../images/qiqi.jpg");
@@ -69,7 +73,6 @@ nav a {
   padding: 4em 1em;
   gap: 0.5em;
   font-weight: 700;
-  opacity: 1;
 }
 .header-style header .subtitle {
   color: #ec5242;

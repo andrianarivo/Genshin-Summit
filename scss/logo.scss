@@ -1,0 +1,35 @@
+@import 'colors.scss';
+@import 'spacing.scss';
+@import 'mixins.scss';
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $md;
+  padding: $lg $md;
+  text-align: center;
+  border-bottom: 1px solid $grey;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    width: 20%;
+    background-color: $accent;
+    border: none;
+    height: 3px;
+  }
+
+  .logo-img {
+    padding: $md;
+    margin: $lg 0;
+    border: 1px solid $grey;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import 'colors.scss';
+@import 'mixins.scss';
+
+.summits {
+  display: grid;
+  grid-template-columns: auto;
+  padding: $xl $md;
+  text-align: center;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    @include title-hr;
+  }
+
+  .summit-item {
+    position: relative;
+    margin: $md 0;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+      background-color: $accent;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 30%;
+      left: 25%;
+      color: $white;
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

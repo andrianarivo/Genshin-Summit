@@ -4,7 +4,6 @@
 .header-style {
   position: relative;
   background: linear-gradient(rgba(82, 82, 82, 0.25), rgba(255, 255, 255, 0));
-  color: $dark;
 
   .header-gradient {
     background-image: url('../images/qiqi.jpg');
@@ -37,7 +36,6 @@
     padding: $xl $md;
     gap: $sm;
     font-weight: 700;
-    opacity: 1;
 
     .subtitle {
       color: $accent;
