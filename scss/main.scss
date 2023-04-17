@@ -20,9 +20,9 @@
 * {
   margin: 0;
   padding: 0;
-  color: $textGrey;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 .main {
@@ -31,4 +31,5 @@
 
 @import 'nav.scss';
 @import 'header.scss';
-@import 'hero.scss';
+@import 'program.scss';
+@import 'button.scss';

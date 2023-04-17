@@ -1,0 +1,51 @@
+@import 'colors.scss';
+@import 'mixins.scss';
+
+.program {
+  background-image: url(../images/program_bg.png);
+  background-repeat: repeat;
+  color: $white;
+  display: grid;
+  grid-template-columns: auto;
+  padding: $xl $md;
+
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  hr {
+    background-color: $textAccent;
+    border: none;
+    height: 2px;
+    width: 20%;
+    margin: $md auto;
+  }
+
+  .program-item {
+    display: grid;
+    grid-template-columns: 26% 30% 44%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: $md;
+    margin: $sm 0;
+
+    img {
+      margin: auto;
+    }
+
+    h3 {
+      @include flex-start-center;
+      color: $textAccent;
+      padding: 0 $sm;
+    }
+
+    p {
+      @include flex-start-center;
+    }
+  }
+
+  .btn {
+    width: 80%;
+    margin: $md auto 0 auto;
+  }
+}
