@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Lato';
+  src: url(./fonts/lato_regular.ttf);
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url(./fonts/lato_italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/lato_bold.ttf);
+  font-weight: bold;
+}
+
+@import 'colors.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $textGrey;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+.main {
+  border: 1px solid #f00;
+}
+
+@import 'nav.scss';
+@import 'header.scss';
+@import 'hero.scss';

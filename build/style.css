@@ -1,3 +1,149 @@
+@font-face {
+  font-family: "Lato";
+  src: url(./fonts/lato_regular.ttf);
+}
+@font-face {
+  font-family: "Lato";
+  src: url(./fonts/lato_italic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/lato_bold.ttf);
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #525252;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}
 
+.main {
+  border: 1px solid #f00;
+}
+
+nav {
+  border: 1px solid #ff0;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  color: #525252;
+  min-height: 3em;
+}
+nav a {
+  text-decoration: none;
+}
+
+.header {
+  border: 1px solid #0f0;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 1em;
+  gap: 0.5em;
+  font-weight: bold;
+  opacity: 1;
+}
+.header .subtitle {
+  color: #ef5e34;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.header .title {
+  color: #ef5e34;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.header .program-time {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.header .description {
+  position: relative;
+  border: 3px solid #fff;
+  background-color: #f7f7f7;
+  padding: 1.2em;
+}
+.header .description-background {
+  background-image: url("../images/multi-color-ball.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5em;
+  height: 7em;
+  position: absolute;
+  right: 0;
+  bottom: 40%;
+  z-index: -10;
+}
+
+.header {
+  border: 1px solid #0f0;
+  display: flex;
+  flex-direction: column;
+  padding: 4em 1em;
+  gap: 0.5em;
+  font-weight: bold;
+  opacity: 1;
+}
+.header .subtitle {
+  color: #ef5e34;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.header .title {
+  color: #ef5e34;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.header .program-time {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.header .description {
+  position: relative;
+  border: 3px solid #fff;
+  background-color: #f7f7f7;
+  padding: 1.2em;
+}
+.header .description-background {
+  background-image: url("../images/multi-color-ball.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 5em;
+  height: 7em;
+  position: absolute;
+  right: 0;
+  bottom: 40%;
+  z-index: -10;
+}
+
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(82, 82, 82, 0.25), rgba(255, 255, 255, 0));
+}
+.hero .hero-gradient {
+  background-image: url("../images/qiqi.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 90%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -10;
+}
+.hero .hero-background {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -10;
+}
 
 /*# sourceMappingURL=style.css.map */

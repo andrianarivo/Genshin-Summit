@@ -1,0 +1,48 @@
+@import 'spacing.scss';
+@import 'colors.scss';
+
+.header {
+  border: 1px solid #0f0;
+  display: flex;
+  flex-direction: column;
+  padding: $xl $md;
+  gap: $sm;
+  font-weight: bold;
+  opacity: 1;
+
+  .subtitle {
+    color: #ef5e34;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+
+  .title {
+    color: #ef5e34;
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+
+  .program-time {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  .description {
+    position: relative;
+    border: 3px solid $white;
+    background-color: $backgroundGrey;
+    padding: 1.2em;
+  }
+
+  .description-background {
+    background-image: url('../images/multi-color-ball.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 5em;
+    height: 7em;
+    position: absolute;
+    right: 0;
+    bottom: 40%;
+    z-index: -10;
+  }
+}
