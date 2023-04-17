@@ -35,7 +35,10 @@
 
 # 📖 Genshin summit<a name="about-project"></a>
 
-**Genshin summit** is a website that highlights the next Genshin impact global summit and it's featured cosplay.
+**The Genshin Impact Summit** is a virtual event that provides a gathering place for fans of the popular video game, Genshin Impact, to engage in a
+variety of community activities, such as keynote speeches, interactive workshops, live gameplay sessions, panel discussions, and community-driven
+events. The Summit offers attendees a chance to connect with fellow fans from around the world, gain insights into the game's development, and
+participate in exciting events and activities.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -102,13 +105,13 @@ Install this project with:
 
 ### Usage
 
-To run the project start [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-To use lints, run following commands: 
+To run the project start [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). To use lints, run following
+commands:
 
 ```sh
-  npx hint . 
-  npx stylelint "**/*.{css,scss}" 
-  npx eslint . 
+  npx hint .
+  npx stylelint "**/*.{css,scss}"
+  npx eslint .
 ```
 
 ### Deployment
@@ -160,9 +163,8 @@ If you like this project, consider giving it a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
-The design is used under the [creative common license](https://creativecommons.org/licenses/by-nc/4.0/).
-No changes were made to the original design.
+Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07). The design is used under the
+[creative common license](https://creativecommons.org/licenses/by-nc/4.0/). No changes were made to the original design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

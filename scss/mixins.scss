@@ -3,3 +3,11 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+@mixin title-hr {
+  background-color: $accent;
+  border: none;
+  height: 2px;
+  width: 20%;
+  margin: $md auto;
+}

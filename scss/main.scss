@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'Lato';
-  src: url(./fonts/lato_regular.ttf);
+  src: url(../fonts/lato_regular.ttf);
 }
 
 @font-face {
   font-family: 'Lato';
-  src: url(./fonts/lato_italic.ttf);
+  src: url(../fonts/lato_italic.ttf);
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Inter';
-  src: url(./fonts/lato_bold.ttf);
+  font-family: 'Lato';
+  src: url(../fonts/lato_bold.ttf);
   font-weight: bold;
 }
 
@@ -32,4 +32,4 @@
 @import 'nav.scss';
 @import 'header.scss';
 @import 'program.scss';
-@import 'button.scss';
+@import 'speakers.scss';

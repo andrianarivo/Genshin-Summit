@@ -4,7 +4,7 @@
 .header-style {
   position: relative;
   background: linear-gradient(rgba(82, 82, 82, 0.25), rgba(255, 255, 255, 0));
-  color: $textGrey;
+  color: $dark;
 
   .header-gradient {
     background-image: url('../images/qiqi.jpg');
@@ -21,7 +21,7 @@
   }
 
   .header-background {
-    background-color: $backgroundGrey;
+    background-color: $grey;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -40,39 +40,24 @@
     opacity: 1;
 
     .subtitle {
-      color: $textAccent;
-      font-weight: normal;
+      color: $accent;
       font-size: 1.5rem;
     }
 
     h1 {
-      color: $textAccent;
-      font-weight: 900;
+      color: $accent;
       font-size: 2.5rem;
     }
 
     .program-time {
       font-size: 1.5rem;
-      font-weight: 900;
     }
 
     p {
       position: relative;
       border: 3px solid $white;
-      background-color: $backgroundGrey;
+      background-color: $grey;
       padding: 1.2em;
-    }
-
-    .description-background {
-      background-image: url('../images/multi-color-ball.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      width: 5em;
-      height: 7em;
-      position: absolute;
-      right: 0;
-      bottom: 40%;
-      z-index: -10;
     }
   }
 }

@@ -1,15 +1,15 @@
 @font-face {
   font-family: "Lato";
-  src: url(./fonts/lato_regular.ttf);
+  src: url(../fonts/lato_regular.ttf);
 }
 @font-face {
   font-family: "Lato";
-  src: url(./fonts/lato_italic.ttf);
+  src: url(../fonts/lato_italic.ttf);
   font-style: italic;
 }
 @font-face {
-  font-family: "Inter";
-  src: url(./fonts/lato_bold.ttf);
+  font-family: "Lato";
+  src: url(../fonts/lato_bold.ttf);
   font-weight: bold;
 }
 * {
@@ -28,7 +28,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 0 1em;
-  color: #525252;
+  color: #272a31;
   min-height: 3em;
 }
 nav a {
@@ -38,7 +38,7 @@ nav a {
 .header-style {
   position: relative;
   background: linear-gradient(rgba(82, 82, 82, 0.25), rgba(255, 255, 255, 0));
-  color: #525252;
+  color: #272a31;
 }
 .header-style .header-gradient {
   background-image: url("../images/qiqi.jpg");
@@ -54,7 +54,7 @@ nav a {
   z-index: -10;
 }
 .header-style .header-background {
-  background-color: #f7f7f7;
+  background-color: #d3d3d3;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -72,35 +72,21 @@ nav a {
   opacity: 1;
 }
 .header-style header .subtitle {
-  color: #ef5e34;
-  font-weight: normal;
+  color: #ec5242;
   font-size: 1.5rem;
 }
 .header-style header h1 {
-  color: #ef5e34;
-  font-weight: 900;
+  color: #ec5242;
   font-size: 2.5rem;
 }
 .header-style header .program-time {
   font-size: 1.5rem;
-  font-weight: 900;
 }
 .header-style header p {
   position: relative;
   border: 3px solid #fff;
-  background-color: #f7f7f7;
+  background-color: #d3d3d3;
   padding: 1.2em;
-}
-.header-style header .description-background {
-  background-image: url("../images/multi-color-ball.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 5em;
-  height: 7em;
-  position: absolute;
-  right: 0;
-  bottom: 40%;
-  z-index: -10;
 }
 
 .program {
@@ -116,7 +102,7 @@ nav a {
   text-align: center;
 }
 .program hr {
-  background-color: #ef5e34;
+  background-color: #ec5242;
   border: none;
   height: 2px;
   width: 20%;
@@ -124,7 +110,7 @@ nav a {
 }
 .program .program-item {
   display: grid;
-  grid-template-columns: 26% 30% 44%;
+  grid-template-columns: 25% 40% 35%;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1em;
   margin: 0.5em 0;
@@ -136,8 +122,9 @@ nav a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: #ef5e34;
+  color: #ec5242;
   padding: 0 0.5em;
+  font-size: 1.2rem;
 }
 .program .program-item p {
   display: flex;
@@ -145,12 +132,7 @@ nav a {
   align-items: center;
 }
 .program .btn {
-  width: 80%;
-  margin: 1em auto 0 auto;
-}
-
-.btn {
-  background-color: #ef5e34;
+  background-color: #ec5242;
   color: inherit;
   border: none;
   padding: 0;
@@ -159,6 +141,82 @@ nav a {
   padding: 1.5em;
   font-weight: 700;
   font-size: 1.2rem;
+  width: 80%;
+  margin: 1em auto 0 auto;
+}
+
+.speakers {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 4em 1em;
+}
+.speakers .title {
+  font-size: 1.5em;
+  text-align: center;
+}
+.speakers .title-separator {
+  background-color: #ec5242;
+  border: none;
+  height: 2px;
+  width: 20%;
+  margin: 1em auto;
+  background-color: #ec5242;
+  width: 20%;
+}
+.speakers .speaker-item {
+  display: flex;
+  margin: 2em 0;
+  gap: 1em;
+}
+.speakers .speaker-item .img {
+  position: relative;
+  padding: 1em 0 0 1em;
+}
+.speakers .speaker-item .img .img-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  background-image: url("../images/square.png");
+  width: 6em;
+  height: 6em;
+}
+.speakers .speaker-item .img img {
+  width: 10em;
+  height: 10em;
+}
+.speakers .speaker-item .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  width: 100%;
+}
+.speakers .speaker-item .info h3 {
+  font-size: 1.5rem;
+}
+.speakers .speaker-item .info .info-separator {
+  border: none;
+  height: 3px;
+  background-color: #d3d3d3;
+  width: 20%;
+}
+.speakers .speaker-item .info .profession {
+  color: #ec5242;
+}
+.speakers .btn-outlined {
+  background-color: #fff;
+  border-radius: 0.2em;
+  border: 1px solid #d3d3d3;
+  color: inherit;
+  padding: 0.7em;
+  outline: inherit;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.speakers .btn-outlined i {
+  color: #ec5242;
+  margin-left: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

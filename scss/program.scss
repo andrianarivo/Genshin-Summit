@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'buttons.scss';
 @import 'mixins.scss';
 
 .program {
@@ -15,16 +16,12 @@
   }
 
   hr {
-    background-color: $textAccent;
-    border: none;
-    height: 2px;
-    width: 20%;
-    margin: $md auto;
+    @include title-hr;
   }
 
   .program-item {
     display: grid;
-    grid-template-columns: 26% 30% 44%;
+    grid-template-columns: 25% 40% 35%;
     background-color: rgba(255, 255, 255, 0.1);
     padding: $md;
     margin: $sm 0;
@@ -35,8 +32,9 @@
 
     h3 {
       @include flex-start-center;
-      color: $textAccent;
+      color: $accent;
       padding: 0 $sm;
+      font-size: 1.2rem;
     }
 
     p {
@@ -45,6 +43,7 @@
   }
 
   .btn {
+    @include button-filled;
     width: 80%;
     margin: $md auto 0 auto;
   }

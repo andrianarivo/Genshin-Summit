@@ -1,0 +1,77 @@
+@import 'colors.scss';
+@import 'buttons.scss';
+@import 'mixins.scss';
+
+.speakers {
+  display: grid;
+  grid-template-columns: auto;
+  padding: $xl $md;
+
+  .title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .title-separator {
+    @include title-hr;
+    background-color: $accent;
+    width: 20%;
+  }
+
+  .speaker-item {
+    display: flex;
+    margin: $lg 0;
+    gap: $md;
+
+    .img {
+      position: relative;
+      padding: $md 0 0 $md;
+
+      .img-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        background-image: url('../images/square.png');
+        width: 6em;
+        height: 6em;
+      }
+
+      img {
+        width: 10em;
+        height: 10em;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: $sm;
+      width: 100%;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .info-separator {
+        border: none;
+        height: 3px;
+        background-color: $grey;
+        width: 20%;
+      }
+
+      .profession {
+        color: $accent;
+      }
+    }
+  }
+
+  .btn-outlined {
+    @include button-outlined;
+
+    i {
+      color: $accent;
+      margin-left: 1em;
+    }
+  }
+}
