@@ -29,23 +29,73 @@
   border: 1px solid #f00;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 1320px;
+    margin: 0 auto;
+  }
+}
+
 nav {
   display: flex;
   align-items: center;
   padding: 0 1em;
   color: #272a31;
   min-height: 3em;
+  font-weight: 700;
 }
-nav a {
+nav .hamburger {
+  color: #272a31;
   text-decoration: none;
 }
+nav .container {
+  display: none;
+}
 
+@media screen and (min-width: 768px) {
+  nav {
+    background-color: #fff;
+    box-shadow: 0px 1px 2px #d3d3d3;
+    min-height: 5em;
+    display: flex;
+  }
+  nav .hamburger {
+    display: none;
+  }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .container a img {
+    width: 9em;
+    height: 3em;
+  }
+  nav .container ul {
+    display: inline-flex;
+    align-items: center;
+    gap: 4em;
+  }
+  nav .container ul li {
+    display: inline;
+  }
+  nav .container ul .campaign {
+    border: 5px solid #ec5242;
+    color: #ec5242;
+    padding: 0.3em 1em;
+  }
+}
 .header-style {
   background-color: #f7f7f7;
+}
+.header-style .header-top {
+  display: none;
 }
 .header-style header {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 4em 1em;
   gap: 0.5em;
   font-weight: 700;
@@ -58,20 +108,87 @@ nav a {
 .header-style header h1 {
   color: #ec5242;
   font-size: 2.5rem;
+  font-weight: 900;
 }
-.header-style header .description {
+.header-style header hr {
+  display: none;
+}
+.header-style header .description.mobile {
   background-color: #fff;
   border: 1px solid #d3d3d3;
   padding: 1em;
 }
+.header-style header .description.desktop {
+  display: none;
+}
 .header-style header .support {
   font-weight: 500;
 }
-.header-style header a {
+.header-style header .contact-mail a {
   text-decoration: underline;
   color: #000;
+  font-size: 1.1em;
+}
+.header-style header .contact-mail i {
+  display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .header-style .header-top {
+    display: flex;
+    background-color: #272a31;
+    padding: 0.5em 0;
+    color: #fff;
+  }
+  .header-style .header-top ul {
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 1em;
+  }
+  .header-style .header-top ul li {
+    display: inline;
+  }
+  .header-style .header-top ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .header-style header {
+    min-height: 40em;
+    gap: 2em;
+  }
+  .header-style header .subtitle {
+    display: none;
+  }
+  .header-style header .title {
+    max-width: 50%;
+  }
+  .header-style header .title h1 {
+    font-size: 4rem;
+  }
+  .header-style header .title hr {
+    display: block;
+    background-color: #ec5242;
+    border: none;
+    height: 2px;
+    width: 3em;
+    margin: 1em auto;
+  }
+  .header-style header .description.mobile {
+    display: none;
+  }
+  .header-style header .description.desktop {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    padding: 1em;
+    display: block;
+    max-width: 50%;
+  }
+  .header-style header .contact-mail i {
+    color: #272a31;
+    display: inline;
+    margin-left: 0.5em;
+  }
+}
 .logo {
   display: flex;
   flex-direction: column;
@@ -113,7 +230,7 @@ nav a {
   background-color: #ec5242;
   border: none;
   height: 2px;
-  width: 20%;
+  width: 3em;
   margin: 1em auto;
 }
 .summits .summit-item {
@@ -164,7 +281,7 @@ nav a {
 .partners hr {
   border: none;
   background-color: #ec5242;
-  width: 20%;
+  width: 3em;
   height: 3px;
 }
 .partners .partners-logo {
@@ -175,30 +292,46 @@ nav a {
 }
 .partners .partners-logo img {
   filter: grayscale(100%);
-  width: 12em;
-  height: 3.8em;
+  width: 9em;
+  height: 3em;
 }
 
+@media screen and (min-width: 768px) {
+  .partners .partners-logo {
+    gap: 4em;
+    margin-top: 2em;
+  }
+}
 footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 4em 1em;
   gap: 0.5em;
 }
-footer .cc-logo {
+footer .container {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .container .cc-logo {
+  display: flex;
+  flex: 1;
   align-items: center;
   gap: 0.5em;
 }
-footer .cc-logo img {
+footer .container .cc-logo img {
   width: 3em;
   height: 3em;
 }
-footer .cc-logo h3 {
-  font-size: 1.5em;
+footer .container .cc-logo h3 {
+  font-size: 1.75em;
+  max-width: 50%;
   line-height: 0.8;
   font-weight: 900;
 }
+footer .container .cc-info {
+  flex: 2;
+}
+footer .container .cc-info p:nth-child(1) {
+  font-weight: 700;
+}
 
-/*# sourceMappingURL=about-style.css.map */
+/*# sourceMappingURL=about_style.css.map */

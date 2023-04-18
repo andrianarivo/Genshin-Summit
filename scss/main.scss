@@ -6,11 +6,17 @@
   @include reset;
 }
 
-.main {
+.home {
   border: 1px solid #f00;
+}
+
+.container {
+  @include container;
 }
 
 @import 'nav.scss';
 @import 'header.scss';
 @import 'program.scss';
 @import 'speakers.scss';
+@import 'partners.scss';
+@import 'footer.scss';

@@ -14,8 +14,6 @@
 
   .title-separator {
     @include title-hr;
-    background-color: $accent;
-    width: 20%;
   }
 
   .speaker-item {
@@ -33,8 +31,9 @@
         left: 0;
         z-index: -10;
         background-image: url('../images/square.png');
-        width: 6em;
-        height: 6em;
+        background-size: contain;
+        width: 7em;
+        height: 7em;
       }
 
       img {
@@ -57,7 +56,7 @@
         border: none;
         height: 3px;
         background-color: $grey;
-        width: 20%;
+        width: 2em;
       }
 
       .profession {
@@ -72,6 +71,29 @@
     i {
       color: $accent;
       margin-left: 1em;
+    }
+  }
+
+  .none {
+    @include none-md;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .speakers {
+    grid-template-columns: 1fr 1fr;
+    gap: $sm;
+
+    .title {
+      grid-column: 1/3;
+    }
+
+    .title-separator {
+      grid-column: 1/3;
+    }
+
+    .btn-outlined {
+      display: none;
     }
   }
 }

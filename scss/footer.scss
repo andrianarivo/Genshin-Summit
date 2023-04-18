@@ -1,24 +1,41 @@
 footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: $xl $md;
   gap: $sm;
 
-  .cc-logo {
+  .container {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: $sm;
 
-    img {
-      width: 3em;
-      height: 3em;
+    .cc-logo {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      gap: $sm;
+
+      img {
+        width: 3em;
+        height: 3em;
+      }
+
+      h3 {
+        font-size: 1.75em;
+        max-width: 50%;
+        line-height: 0.8;
+        font-weight: 900;
+      }
     }
 
-    h3 {
-      font-size: 1.5em;
-      line-height: 0.8;
-      font-weight: 900;
+    .cc-info {
+      flex: 2;
+      p {
+        &:nth-child(1) {
+          font-weight: 700;
+        }
+      }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
 }

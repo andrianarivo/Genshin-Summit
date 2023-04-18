@@ -15,14 +15,37 @@
     <title>Genshin Summit</title>
   </head>
   <body>
-    <div class="main">
+    <div class="home">
       <div class="header-style">
-        <div class="header-gradient"></div>
-        <div class="header-background"></div>
+        <div class="header-image"></div>
+        <div class="header-top">
+          <ul class="container">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>English</li>
+            <li>My Page</li>
+            <li>Logout</li>
+          </ul>
+        </div>
         <nav>
-          <a><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></a>
+          <a class="hamburger"><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></a>
+          <div class="container">
+            <a><img src="images/Genshin_Impact_logo.png" /></a>
+            <ul>
+              <li>About</li>
+              <li>Program</li>
+              <li>Join</li>
+              <li>Sponsor</li>
+              <li>News</li>
+              <li class="campaign">Campaign</li>
+            </ul>
+          </div>
         </nav>
-        <header>
+        <header class="container">
           <h3 class="subtitle">"Uniting global travelers."</h3>
           <h1>Genshin Impact Summit 2023</h1>
           <p>
@@ -30,45 +53,48 @@
             community activities worldwide.
           </p>
           <h3 class="program-time">2023.10.15(SUN) ~ 16(MON)</h3>
-          <h3>@Discord</h3>
+          <h3 class="program-venue">@Discord</h3>
         </header>
       </div>
 
       <main>
         <section class="program">
-          <h3 class="title">Main program</h3>
-          <hr />
-          <div class="program-item">
-            <img src="images/lecture.png" />
-            <h3>Keynote speeches</h3>
-            <p>Expert insights on Genshin Impact's development, trends, and updates at the Summit.</p>
+          <div class="container">
+            <h3 class="title">Main program</h3>
+            <hr />
+            <div class="program-item">
+              <img src="images/lecture.png" />
+              <h3>Keynote speeches</h3>
+              <p>Expert insights on Genshin Impact's development, trends, and updates at the Summit.</p>
+            </div>
+            <div class="program-item">
+              <img src="images/workshop.png" />
+              <h3>Interactive workshops and Q&A</h3>
+              <p class="description">Connect with Genshin Impact developers and creators at the Summit for insights into the game's development.</p>
+            </div>
+            <div class="program-item">
+              <img src="images/gameplay.png" />
+              <h3>Live gameplay</h3>
+              <p class="description">Compete and test skills in live gameplay sessions and tournaments at the Summit.</p>
+            </div>
+            <div class="program-item">
+              <img src="images/discussion.png" />
+              <h3>Panel discussions</h3>
+              <p class="description">
+                Gain insights on the game's lore, character design, and soundtrack production in panel discussions at the Summit.
+              </p>
+            </div>
+            <div class="program-item">
+              <img src="images/prizes.png" />
+              <h3>Swag bags and prizes</h3>
+              <p class="description">Win prizes and swag bags throughout the Summit for added excitement and participation incentives.</p>
+            </div>
+            <a href="#" class="see-program">see the whole program</a>
+            <button class="btn">Join Summit 2023</button>
           </div>
-          <div class="program-item">
-            <img src="images/workshop.png" />
-            <h3>Interactive workshops and Q&A</h3>
-            <p class="description">Connect with Genshin Impact developers and creators at the Summit for insights into the game's development.</p>
-          </div>
-          <div class="program-item">
-            <img src="images/gameplay.png" />
-            <h3>Live gameplay</h3>
-            <p class="description">Compete and test skills in live gameplay sessions and tournaments at the Summit.</p>
-          </div>
-          <div class="program-item">
-            <img src="images/discussion.png" />
-            <h3>Panel discussions</h3>
-            <p class="description">
-              Gain insights on the game's lore, character design, and soundtrack production in panel discussions at the Summit.
-            </p>
-          </div>
-          <div class="program-item">
-            <img src="images/prizes.png" />
-            <h3>Swag bags and prizes</h3>
-            <p class="description">Win prizes and swag bags throughout the Summit for added excitement and participation incentives.</p>
-          </div>
-          <button class="btn">Join Summit 2023</button>
         </section>
 
-        <section class="speakers">
+        <section class="container speakers">
           <h3 class="title">Featured speakers</h3>
           <hr class="title-separator" />
           <div class="speaker-item">
@@ -103,9 +129,98 @@
               </p>
             </div>
           </div>
+          <div class="none speaker-item">
+            <div class="img">
+              <span class="img-background"></span>
+              <img src="https://yt3.googleusercontent.com/ytc/AGIKgqNSVYvG8Vr6D5X6DyQ5MqoKatfpEbqCwbjlrZUlqQ=s176-c-k-c0x00ffffff-no-rj" />
+            </div>
+            <div class="info">
+              <h3>IWinToLooseGaming</h3>
+              <p class="profession">Youtube</p>
+              <hr class="info-separator" />
+              <p class="description">
+                IWinToLooseGaming is a dedicated gamer who creates analysis, showcase, and other videos for the games they play, with a focus on
+                Genshin Impact.
+              </p>
+            </div>
+          </div>
+          <div class="none speaker-item">
+            <div class="img">
+              <span class="img-background"></span>
+              <img src="https://yt3.googleusercontent.com/ytc/AGIKgqNXdscpVWVa62PX3KTUN7CKdiQDQKczxlwJg-YDCg=s176-c-k-c0x00ffffff-no-rj" />
+            </div>
+            <div class="info">
+              <h3>Zy0x</h3>
+              <p class="profession">Youtube, Twitch</p>
+              <hr class="info-separator" />
+              <p class="description">
+                Zy0x has 649K subscribers on YouTube and has created 235 videos. Additionally, links to their Twitter and Twitch accounts are
+                available.
+              </p>
+            </div>
+          </div>
+          <div class="none speaker-item">
+            <div class="img">
+              <span class="img-background"></span>
+              <img src="https://yt3.googleusercontent.com/ytc/AGIKgqNL353B2-5Rk6DvHTaQQbj5yIMjg8kks9pFAzjYTA=s176-c-k-c0x00ffffff-no-rj" />
+            </div>
+            <div class="info">
+              <h3>Dish</h3>
+              <p class="profession">Youtube, Twitch, Instagram</p>
+              <hr class="info-separator" />
+              <p class="description">
+                Dish is a content creator with 777K subscribers on YouTube, who has posted 321 videos so far. Dish has provided links to their Twitch,
+                Twitter, Instagram, Email, Discord, and TikTok accounts.
+              </p>
+            </div>
+          </div>
+          <div class="none speaker-item">
+            <div class="img">
+              <span class="img-background"></span>
+              <img src="https://yt3.googleusercontent.com/ytc/AGIKgqPWDdC-925sSfPwi4L9iJ6Mmc359DeItDqLSqXC=s176-c-k-c0x00ffffff-no-rj" />
+            </div>
+            <div class="info">
+              <h3>Gacha Gamer</h3>
+              <p class="profession">Youtube, Own website</p>
+              <hr class="info-separator" />
+              <p class="description">
+                Gacha Gamer provides tier lists, guides, reviews, and news for gacha games, with a focus on collectible style games. They also cover
+                MMORPG and other mobile game titles, and offer the latest news on gacha games on their website.
+              </p>
+            </div>
+          </div>
           <button class="btn-outlined">MORE <i class="fa-solid fa-chevron-down"></i></button>
         </section>
+
+        <section class="partners">
+          <h3>Partners</h3>
+          <hr />
+          <div class="partners-logo">
+            <img src="images/mozilla.svg" />
+            <img src="images/Google_2015_logo.png" />
+            <img src="images/Naver_Logotype.png" />
+            <img src="images/daumkakao_logo.png" />
+            <img src="images/Airbnb_Logo.png" />
+          </div>
+        </section>
       </main>
+
+      <footer>
+        <div class="container">
+          <div class="cc-logo">
+            <img src="images/Cc_logo.png" />
+            <h3>creative commons korea</h3>
+          </div>
+          <div class="cc-info">
+            <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+            <p>
+              The Creative Commons copyright licenses and tools forge a balance inside the traditional “all rights reserved” setting that copyright
+              law creates. Our tools give everyone from individual creators to large companies and institutions a simple, standardized way to grant
+              copyright permissions to their creative work.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

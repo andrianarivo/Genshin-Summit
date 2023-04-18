@@ -16,6 +16,19 @@
   background-color: $accent;
   border: none;
   height: 2px;
-  width: 20%;
+  width: 3em;
   margin: $md auto;
+}
+
+@mixin container {
+  @media screen and (min-width: 768px) {
+    width: 1320px;
+    margin: 0 auto;
+  }
+}
+
+@mixin none-md {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }

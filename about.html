@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/about-style.css" />
+    <link rel="stylesheet" href="build/about_style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -17,18 +17,53 @@
   <body>
     <div class="about">
       <div class="header-style">
+        <div class="header-top">
+          <ul class="container">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>English</li>
+            <li>My Page</li>
+            <li>Logout</li>
+          </ul>
+        </div>
         <nav>
-          <a><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></a>
+          <a class="hamburger" href=""><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></a>
+          <div class="container">
+            <a><img src="images/Genshin_Impact_logo.png" /></a>
+            <ul>
+              <li>About</li>
+              <li>Program</li>
+              <li>Join</li>
+              <li>Sponsor</li>
+              <li>News</li>
+              <li class="campaign">Campaign</li>
+            </ul>
+          </div>
         </nav>
-        <header>
+        <header class="container">
           <h3 class="subtitle">"Uniting global travelers."</h3>
-          <h1>Genshin Impact Summit 2023</h1>
-          <p class="description">
+          <div class="title">
+            <h1>Genshin Impact Summit 2023</h1>
+            <hr />
+          </div>
+          <p class="description mobile">
             The Genshin Impact Summit is a virtual event that brings together fans of the game to participate in a variety of community activities and
             connect with fellow travelers from around the world. Join discussions, presentations, and exciting events for a united adventure.
           </p>
-          <p class="support">Please contact us per email for any further questions about Genshin Summit 2023!</p>
-          <a href="">andrianarivo.david@gmail.com</a>
+          <p class="description desktop">
+            Welcome to the Genshin Impact Summit! This virtual event is the ultimate destination for fans of the popular video game, Genshin Impact,
+            to come together and engage in a variety of community activities. Connect with fellow travelers from around the world, participate in
+            discussions and presentations with experts and influencers, and join in on exciting events and activities. The Genshin Impact Summit is
+            the perfect opportunity for fans to unite and experience the adventure together.
+          </p>
+          <div class="contact-mail">
+            <p class="support">Please contact us per email for any further questions about Genshin Summit 2023!</p>
+            <a href="">andrianarivo.david@gmail.com</a><i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
         </header>
       </div>
 
@@ -77,11 +112,20 @@
       </main>
 
       <footer>
-        <div class="cc-logo">
-          <img src="images/Cc_logo.png" />
-          <h3>creative commons korea</h3>
+        <div class="container">
+          <div class="cc-logo">
+            <img src="images/Cc_logo.png" />
+            <h3>creative commons korea</h3>
+          </div>
+          <div class="cc-info">
+            <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+            <p>
+              The Creative Commons copyright licenses and tools forge a balance inside the traditional “all rights reserved” setting that copyright
+              law creates. Our tools give everyone from individual creators to large companies and institutions a simple, standardized way to grant
+              copyright permissions to their creative work.
+            </p>
+          </div>
         </div>
-        <p>2015 Creative Commons Korea. Some Rights Reserved.</p>
       </footer>
     </div>
   </body>

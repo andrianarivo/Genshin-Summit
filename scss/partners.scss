@@ -16,7 +16,7 @@
   hr {
     border: none;
     background-color: $accent;
-    width: 20%;
+    width: 3em;
     height: 3px;
   }
 
@@ -28,8 +28,17 @@
 
     img {
       filter: grayscale(100%);
-      width: 12em;
-      height: 3.8em;
+      width: 9em;
+      height: 3em;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .partners {
+    .partners-logo {
+      gap: $xl;
+      margin-top: $lg;
     }
   }
 }

@@ -10,8 +10,12 @@
   border: 1px solid #f00;
 }
 
+.container {
+  @include container;
+}
+
 @import 'nav.scss';
-@import 'about-header.scss';
+@import 'about_header.scss';
 @import 'logo.scss';
 @import 'summits.scss';
 @import 'partners.scss';

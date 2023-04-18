@@ -6,45 +6,98 @@
   background-image: url(../images/program_bg.png);
   background-repeat: repeat;
   color: $white;
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
   padding: $xl $md;
 
-  .title {
-    font-size: 1.5rem;
-    text-align: center;
-  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  hr {
-    @include title-hr;
-  }
-
-  .program-item {
-    display: grid;
-    grid-template-columns: 25% 40% 35%;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: $md;
-    margin: $sm 0;
-
-    img {
-      margin: auto;
+    .title {
+      font-size: 1.5rem;
+      text-align: center;
     }
 
-    h3 {
-      @include flex-start-center;
-      color: $accent;
-      padding: 0 $sm;
-      font-size: 1.2rem;
+    hr {
+      @include title-hr;
     }
 
-    p {
-      @include flex-start-center;
+    .program-item {
+      display: grid;
+      grid-template-columns: 25% 40% 35%;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: $md;
+      margin: $sm 0;
+
+      img {
+        margin: auto;
+      }
+
+      h3 {
+        @include flex-start-center;
+        color: $accent;
+        padding: 0 $sm;
+        font-size: 1.2rem;
+      }
+
+      p {
+        @include flex-start-center;
+      }
+    }
+
+    .see-program {
+      display: none;
+    }
+
+    .btn {
+      @include button-filled;
+      width: 80%;
+      margin: $md 0 0 0;
     }
   }
+}
 
-  .btn {
-    @include button-filled;
-    width: 80%;
-    margin: $md auto 0 auto;
+@media screen and (min-width: 768px) {
+  .program {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: $sm;
+
+      .title {
+        grid-column: 1/6;
+      }
+
+      hr {
+        grid-column: 1/6;
+      }
+
+      .program-item {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+        height: 100%;
+
+        h3 {
+          justify-content: center;
+        }
+      }
+
+      .see-program {
+        grid-column: 3/4;
+        display: inline-block;
+        text-decoration: underline;
+        color: $white;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        margin: $xl 0 $lg 0;
+      }
+
+      .btn {
+        display: none;
+      }
+    }
   }
 }
