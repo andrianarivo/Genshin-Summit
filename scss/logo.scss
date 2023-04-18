@@ -3,33 +3,46 @@
 @import 'mixins.scss';
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: $md;
-  padding: $lg $md;
+  padding: $xl $md;
   text-align: center;
   border-bottom: 1px solid $grey;
+  border-top: 1px solid $grey;
 
-  h3 {
-    font-size: 1.5rem;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    hr {
+      @include title-hr;
+    }
+
+    .logo-img {
+      padding: $md;
+      margin: $lg 0;
+      border: 2px solid $grey;
+      width: 90%;
+      height: 90%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
+}
 
-  hr {
-    width: 20%;
-    background-color: $accent;
-    border: none;
-    height: 3px;
-  }
-
-  .logo-img {
-    padding: $md;
-    margin: $lg 0;
-    border: 1px solid $grey;
-
-    img {
-      width: 100%;
-      height: 100%;
+@media screen and (min-width: 768px) {
+  .logo {
+    .container {
+      .logo-img {
+        width: 40%;
+        height: 14%;
+      }
     }
   }
 }

@@ -26,6 +26,10 @@
     flex-wrap: wrap;
     gap: $lg;
 
+    li {
+      display: inline;
+    }
+
     img {
       filter: grayscale(100%);
       width: 9em;

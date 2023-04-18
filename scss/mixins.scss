@@ -1,3 +1,5 @@
+@import 'spacing.scss';
+
 @mixin reset {
   margin: 0;
   padding: 0;
@@ -22,7 +24,7 @@
 
 @mixin container {
   @media screen and (min-width: 768px) {
-    width: 1320px;
+    width: $max-width;
     margin: 0 auto;
   }
 }

@@ -25,10 +25,6 @@
   line-height: 1.5;
 }
 
-.about {
-  border: 1px solid #f00;
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 1320px;
@@ -49,7 +45,40 @@ nav .hamburger {
   text-decoration: none;
 }
 nav .container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 82, 66, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 50;
+}
+nav .container a {
+  color: #272a31;
+  text-decoration: none;
+}
+nav .container a img {
   display: none;
+}
+nav .container a .fa-solid.fa-xmark {
+  position: absolute;
+  right: 5%;
+  top: 3%;
+}
+nav .container ul {
+  display: flex;
+  flex-direction: column;
+  padding: 4em 0 0 1em;
+}
+nav .container ul li {
+  display: inline;
+}
+nav .container ul li a {
+  font-size: 2rem;
+  color: #272a31;
+  font-weight: 900;
 }
 
 @media screen and (min-width: 768px) {
@@ -64,20 +93,37 @@ nav .container {
   }
   nav .container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    position: relative;
+    width: 1320px;
+    height: auto;
     align-items: center;
+    background-color: #fff;
+    backdrop-filter: none;
   }
   nav .container a img {
+    display: block;
     width: 9em;
     height: 3em;
   }
+  nav .container a .fa-solid.fa-xmark {
+    display: none;
+  }
   nav .container ul {
     display: inline-flex;
+    flex-direction: row;
     align-items: center;
     gap: 4em;
+    padding: 0;
   }
-  nav .container ul li {
-    display: inline;
+  nav .container ul li:nth-child(1) {
+    color: #ec5242;
+  }
+  nav .container ul li a {
+    font-size: 1rem;
+    color: #272a31;
+    font-weight: 700;
   }
   nav .container ul .campaign {
     border: 5px solid #ec5242;
@@ -190,33 +236,44 @@ nav .container {
   }
 }
 .logo {
+  padding: 4em 1em;
+  text-align: center;
+  border-bottom: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
+}
+.logo .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em;
-  padding: 2em 1em;
-  text-align: center;
-  border-bottom: 1px solid #d3d3d3;
 }
-.logo h3 {
+.logo .container h3 {
   font-size: 1.5rem;
 }
-.logo hr {
-  width: 20%;
+.logo .container hr {
   background-color: #ec5242;
   border: none;
-  height: 3px;
+  height: 2px;
+  width: 3em;
+  margin: 1em auto;
 }
-.logo .logo-img {
+.logo .container .logo-img {
   padding: 1em;
   margin: 2em 0;
-  border: 1px solid #d3d3d3;
+  border: 2px solid #d3d3d3;
+  width: 90%;
+  height: 90%;
 }
-.logo .logo-img img {
+.logo .container .logo-img img {
   width: 100%;
   height: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .logo .container .logo-img {
+    width: 40%;
+    height: 14%;
+  }
+}
 .summits {
   display: grid;
   grid-template-columns: auto;
@@ -243,22 +300,23 @@ nav .container {
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0.7;
   background-color: #ec5242;
 }
-.summits .summit-item .info {
+.summits .summit-item .overlay .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 30%;
-  left: 30%;
   color: #fff;
 }
-.summits .summit-item .info h3 {
+.summits .summit-item .overlay .info h3 {
   font-size: 2rem;
+  font-weight: 900;
 }
-.summits .summit-item .info p {
+.summits .summit-item .overlay .info p {
   font-size: 1.2rem;
 }
 .summits .summit-item img {
@@ -266,6 +324,34 @@ nav .container {
   height: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .summits {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+  }
+  .summits h3 {
+    grid-column: 1/3;
+  }
+  .summits hr {
+    grid-column: 1/3;
+  }
+  .summits p {
+    grid-column: 1/3;
+    margin-bottom: 2em;
+  }
+  .summits .summit-item:nth-child(even) {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .summits .summit-item:nth-child(odd) {
+    margin-right: auto;
+    margin-left: 0.5em;
+  }
+  .summits .summit-item img {
+    width: 30em;
+    height: 17em;
+  }
+}
 .partners {
   background-color: #272a31;
   color: #fff;
@@ -289,6 +375,9 @@ nav .container {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2em;
+}
+.partners .partners-logo li {
+  display: inline;
 }
 .partners .partners-logo img {
   filter: grayscale(100%);
@@ -332,6 +421,15 @@ footer .container .cc-info {
 }
 footer .container .cc-info p:nth-child(1) {
   font-weight: 700;
+}
+footer .container .cc-info p:nth-child(2) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  footer .container .cc-info p:nth-child(2) {
+    display: inline;
+  }
 }
 
 /*# sourceMappingURL=about_style.css.map */

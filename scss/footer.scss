@@ -28,14 +28,30 @@ footer {
 
     .cc-info {
       flex: 2;
+
       p {
         &:nth-child(1) {
           font-weight: 700;
+        }
+
+        &:nth-child(2) {
+          display: none;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+  footer {
+    .container {
+      .cc-info {
+        p {
+          &:nth-child(2) {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
 }
