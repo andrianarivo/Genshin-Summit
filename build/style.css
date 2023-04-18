@@ -47,6 +47,7 @@ nav .hamburger {
 nav .container {
   display: flex;
   position: fixed;
+  visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -369,11 +370,13 @@ nav .container ul li a {
 .speakers .speaker-item .info {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 0.5em;
   width: 100%;
 }
 .speakers .speaker-item .info h3 {
   font-size: 1.5rem;
+  width: 80%;
 }
 .speakers .speaker-item .info .info-separator {
   border: none;
@@ -383,6 +386,9 @@ nav .container ul li a {
 }
 .speakers .speaker-item .info .profession {
   color: #ec5242;
+}
+.speakers .speaker-item .info .description {
+  width: 80%;
 }
 .speakers .btn-outlined {
   background-color: #fff;
@@ -415,6 +421,9 @@ nav .container ul li a {
   }
   .speakers .title-separator {
     grid-column: 1/3;
+  }
+  .speakers .speaker-item .info .description {
+    width: 100%;
   }
   .speakers .btn-outlined {
     display: none;

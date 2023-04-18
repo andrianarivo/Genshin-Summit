@@ -34,15 +34,16 @@
         </div>
         <nav>
           <a class="hamburger" href="#" id="hamburger"><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></a>
-          <div class="container">
+          <div class="container" id="menu">
             <a href="./index.html"><img src="images/Genshin_Impact_logo.png" /></a>
+            <a href="#" id="xmark"><i class="fa-solid fa-xmark fa-xl"></i></a>
             <ul>
-              <li>About</li>
-              <li>Program</li>
-              <li>Join</li>
-              <li>Sponsor</li>
-              <li>News</li>
-              <li class="campaign">Campaign</li>
+              <li><a href="./about.html" class="menu-item">About</a></li>
+              <li><a href="./index.html#program" class="menu-item">Program</a></li>
+              <li><a href="#" class="menu-item">Join</a></li>
+              <li><a href="#partners" class="menu-item">Sponsor</a></li>
+              <li><a href="#" class="menu-item">News</a></li>
+              <li class="campaign menu-item"><a href="#">Campaign</a></li>
             </ul>
           </div>
         </nav>
@@ -64,7 +65,7 @@
           </p>
           <div class="contact-mail">
             <p class="support">Please contact us per email for any further questions about Genshin Summit 2023!</p>
-            <a href="">andrianarivo.david@gmail.com</a><i class="fa-sharp fa-solid fa-chevron-right"></i>
+            <a href="mailto:andrianarivo.david@gmail.com">andrianarivo.david@gmail.com</a><i class="fa-sharp fa-solid fa-chevron-right"></i>
           </div>
         </header>
       </div>
@@ -86,25 +87,29 @@
           <hr />
           <p>Take a look at the last Genshin Impact Summits which took place live online.</p>
           <div class="summit-item">
-            <div class="overlay">
-              <div class="info">
-                <h3>3.6</h3>
-                <p>Genshin impact update</p>
+            <a href="#">
+              <div class="overlay">
+                <div class="info">
+                  <h3>3.6</h3>
+                  <p>Genshin impact update</p>
+                </div>
               </div>
-            </div>
-            <img src="images/genshin_3.6_update.jpg" />
+              <img src="images/genshin_3.6_update.jpg" />
+            </a>
           </div>
           <div class="summit-item">
-            <div class="overlay">
-              <div class="info">
-                <h3>3.5</h3>
-                <p>Genshin impact update</p>
+            <a href="#">
+              <div class="overlay">
+                <div class="info">
+                  <h3>3.5</h3>
+                  <p>Genshin impact update</p>
+                </div>
               </div>
-            </div>
-            <img src="images/genshin_3.5_update.jpg" />
+              <img src="images/genshin_3.5_update.jpg" />
+            </a>
           </div>
         </section>
-        <section class="partners">
+        <section class="partners" id="partners">
           <h3>Partners</h3>
           <hr />
           <ul class="partners-logo">
@@ -134,5 +139,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
