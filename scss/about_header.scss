@@ -101,6 +101,7 @@
 
         hr {
           display: block;
+
           @include title-hr;
         }
       }
