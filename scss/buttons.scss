@@ -1,0 +1,26 @@
+@import 'colors.scss';
+@import 'mixins.scss';
+
+@mixin button-filled {
+  background-color: $accent;
+  color: inherit;
+  border: none;
+  outline: inherit;
+  font-family: 'Lato', sans-serif;
+  padding: 1.5em;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+@mixin button-outlined {
+  @include border-grey;
+
+  background-color: $white;
+  border-radius: 0.2em;
+  color: inherit;
+  padding: 0.7em;
+  outline: inherit;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}

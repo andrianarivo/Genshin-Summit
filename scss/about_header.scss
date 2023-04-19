@@ -1,0 +1,133 @@
+@import 'colors.scss';
+
+.header-style {
+  background-color: $lightGrey;
+
+  .header-top {
+    display: none;
+  }
+
+  header {
+    @include flex-column;
+
+    align-items: center;
+    justify-content: center;
+    padding: $xl $md;
+    gap: $sm;
+    font-weight: 700;
+    text-align: center;
+
+    .subtitle {
+      color: $accent;
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      color: $accent;
+      font-size: 2.5rem;
+      font-weight: 900;
+    }
+
+    hr {
+      display: none;
+    }
+
+    .description.mobile {
+      @include border-grey;
+
+      background-color: $white;
+      padding: $md;
+    }
+
+    .description.desktop {
+      display: none;
+    }
+
+    .support {
+      font-weight: 500;
+    }
+
+    .contact-mail {
+      a {
+        text-decoration: underline;
+        color: $black;
+        font-size: 1.1em;
+      }
+
+      i {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header-style {
+    .header-top {
+      @include flex-row;
+
+      background-color: $dark;
+      padding: $sm 0;
+      color: $white;
+
+      ul {
+        display: inline-flex;
+        justify-content: flex-end;
+        gap: $md;
+
+        li {
+          display: inline;
+
+          a {
+            text-decoration: none;
+            color: $white;
+          }
+        }
+      }
+    }
+
+    header {
+      min-height: 40em;
+      gap: $lg;
+
+      .subtitle {
+        display: none;
+      }
+
+      .title {
+        max-width: 50%;
+
+        h1 {
+          font-size: 4rem;
+        }
+
+        hr {
+          display: block;
+
+          @include title-hr;
+        }
+      }
+
+      .description.mobile {
+        display: none;
+      }
+
+      .description.desktop {
+        @include border-grey;
+
+        background-color: $white;
+        padding: $md;
+        display: block;
+        max-width: 50%;
+      }
+
+      .contact-mail {
+        i {
+          color: $dark;
+          display: inline;
+          margin-left: $sm;
+        }
+      }
+    }
+  }
+}

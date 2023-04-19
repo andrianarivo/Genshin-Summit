@@ -1,0 +1,73 @@
+@import 'spacing.scss';
+@import 'colors.scss';
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@mixin flex-start-center {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin title-hr {
+  background-color: $accent;
+  border: none;
+  height: 2px;
+  width: 3em;
+  margin: $md auto;
+}
+
+@mixin mx-auto {
+  margin: 0 auto;
+}
+
+@mixin container {
+  @media screen and (min-width: 1201px) {
+    @include mx-auto;
+
+    width: $max-width;
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    @include mx-auto;
+
+    width: $medium-width;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    @include mx-auto;
+
+    width: $min-width;
+  }
+
+  @media (max-width: 575px) {
+    @include mx-auto;
+
+    width: inherit;
+  }
+}
+
+@mixin none-md {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin border-grey {
+  border: $greyBorder;
+}

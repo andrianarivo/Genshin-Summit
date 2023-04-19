@@ -1,0 +1,18 @@
+@import 'fonts.scss';
+@import 'colors.scss';
+@import 'mixins.scss';
+
+* {
+  @include reset;
+}
+
+.container {
+  @include container;
+}
+
+@import 'nav.scss';
+@import 'about_header.scss';
+@import 'logo.scss';
+@import 'summits.scss';
+@import 'partners.scss';
+@import 'footer.scss';

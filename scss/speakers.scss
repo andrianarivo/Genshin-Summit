@@ -1,0 +1,114 @@
+@import 'colors.scss';
+@import 'buttons.scss';
+@import 'mixins.scss';
+
+.speakers {
+  display: grid;
+  grid-template-columns: auto;
+  padding: $xl $md;
+
+  .title {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .title-separator {
+    @include title-hr;
+  }
+
+  .speaker-item {
+    @include flex-row;
+
+    margin: $lg 0;
+    gap: $md;
+
+    .img {
+      position: relative;
+      padding: $md 0 0 $md;
+
+      .img-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -10;
+        background-image: url('../images/square.png');
+        background-size: contain;
+        width: 7em;
+        height: 7em;
+      }
+
+      img {
+        width: 10em;
+        height: 10em;
+      }
+    }
+
+    .info {
+      @include flex-column;
+
+      flex-wrap: wrap;
+      gap: $sm;
+      width: 100%;
+
+      h3 {
+        font-size: 1.5rem;
+        width: 80%;
+      }
+
+      .info-separator {
+        border: none;
+        height: 3px;
+        background-color: $grey;
+        width: 2em;
+      }
+
+      .profession {
+        color: $accent;
+      }
+
+      .description {
+        width: 80%;
+      }
+    }
+  }
+
+  .btn-outlined {
+    @include button-outlined;
+
+    i {
+      color: $accent;
+      margin-left: 1em;
+    }
+  }
+
+  .none {
+    @include none-md;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .speakers {
+    grid-template-columns: 1fr 1fr;
+    gap: $sm;
+
+    .title {
+      grid-column: 1/3;
+    }
+
+    .title-separator {
+      grid-column: 1/3;
+    }
+
+    .speaker-item {
+      .info {
+        .description {
+          width: 100%;
+        }
+      }
+    }
+
+    .btn-outlined {
+      display: none;
+    }
+  }
+}

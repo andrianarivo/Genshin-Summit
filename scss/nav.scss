@@ -1,0 +1,139 @@
+@import 'colors.scss';
+@import 'spacing.scss';
+
+nav {
+  @include flex-row;
+
+  align-items: center;
+  padding: 0 $md;
+  color: $dark;
+  min-height: 3em;
+  font-weight: 700;
+
+  .hamburger {
+    color: $dark;
+    text-decoration: none;
+  }
+
+  .container {
+    @include flex-row;
+
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 82, 66, 0.6);
+    backdrop-filter: blur(5px);
+    z-index: 50;
+
+    a {
+      color: $dark;
+      text-decoration: none;
+
+      img {
+        display: none;
+      }
+
+      .fa-solid.fa-xmark {
+        position: absolute;
+        right: 5%;
+        top: 3%;
+      }
+    }
+
+    ul {
+      @include flex-column;
+
+      padding: $xl 0 0 $md;
+
+      li {
+        display: inline;
+
+        a {
+          font-size: 2rem;
+          color: $dark;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    background-color: $white;
+    box-shadow: 0 1px 2px $grey;
+    min-height: 5em;
+    display: flex;
+
+    .hamburger {
+      display: none;
+    }
+
+    .container {
+      @include container;
+      @include flex-row;
+
+      justify-content: space-between;
+      position: relative;
+      height: auto;
+      align-items: center;
+      background-color: $white;
+      backdrop-filter: none;
+
+      a {
+        img {
+          display: block;
+          width: 9em;
+          height: 3em;
+        }
+
+        .fa-solid.fa-xmark {
+          display: none;
+        }
+      }
+
+      ul {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+
+        @media screen and (min-width: 1201px) {
+          gap: $xl;
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+          gap: $md;
+        }
+
+        li {
+          &:nth-child(1) {
+            color: $accent;
+          }
+
+          a {
+            font-size: 1rem;
+            color: $dark;
+            font-weight: 700;
+
+            &:hover {
+              color: $accent;
+            }
+          }
+
+          .campaign {
+            border: 5px solid $accent;
+            padding: 0.3em 1em;
+
+            a {
+              color: $accent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

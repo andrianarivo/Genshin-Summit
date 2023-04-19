@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/style.css" />
+    <link rel="stylesheet" href="build/about_style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -12,12 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Genshin Summit</title>
+    <title>About Summit</title>
   </head>
   <body>
-    <div class="home">
+    <div class="about">
       <div class="header-style">
-        <div class="header-image"></div>
         <div class="header-top">
           <ul class="container">
             <li>
@@ -34,13 +33,13 @@
           </ul>
         </div>
         <nav>
-          <a class="hamburger" id="hamburger"><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></a>
+          <a class="hamburger" href="#" id="hamburger"><i class="fa-sharp fa-solid fa-bars fa-2xl"></i></a>
           <div class="container" id="menu">
-            <a href="#"><img src="images/Genshin_Impact_logo.png" alt="Genshin Impact logo" /></a>
+            <a href="./index.html"><img src="images/Genshin_Impact_logo.png" alt="genshin logo" /></a>
             <a href="#" id="xmark"><i class="fa-solid fa-xmark fa-xl"></i></a>
             <ul>
-              <li><a href="./about.html" class="menu-item">About</a></li>
-              <li><a href="#program" class="menu-item">Program</a></li>
+              <li><a href="./index.html" class="menu-item">Home</a></li>
+              <li><a href="./index.html#program" class="menu-item">Program</a></li>
               <li><a href="#" class="menu-item">Join</a></li>
               <li><a href="#partners" class="menu-item">Sponsor</a></li>
               <li><a href="#" class="menu-item">News</a></li>
@@ -50,58 +49,66 @@
         </nav>
         <header class="container">
           <h3 class="subtitle">"Uniting global travelers."</h3>
-          <h1>Genshin Impact Summit 2023</h1>
-          <p>
-            Discover a new world of adventure at the Genshin Impact Summit - the ultimate virtual gathering for fans to connect and engage in
-            community activities worldwide.
+          <div class="title">
+            <h1>Genshin Impact Summit 2023</h1>
+            <hr />
+          </div>
+          <p class="description mobile">
+            The Genshin Impact Summit is a virtual event that brings together fans of the game to participate in a variety of community activities and
+            connect with fellow travelers from around the world. Join discussions, presentations, and exciting events for a united adventure.
           </p>
-          <h3 class="program-time">2023.10.15(SUN) ~ 16(MON)</h3>
-          <h3 class="program-venue">@Discord</h3>
+          <p class="description desktop">
+            Welcome to the Genshin Impact Summit! This virtual event is the ultimate destination for fans of the popular video game, Genshin Impact,
+            to come together and engage in a variety of community activities. Connect with fellow travelers from around the world, participate in
+            discussions and presentations with experts and influencers, and join in on exciting events and activities. The Genshin Impact Summit is
+            the perfect opportunity for fans to unite and experience the adventure together.
+          </p>
+          <div class="contact-mail">
+            <p class="support">Please contact us per email for any further questions about Genshin Summit 2023!</p>
+            <a href="mailto:andrianarivo.david@gmail.com">andrianarivo.david@gmail.com</a><i class="fa-sharp fa-solid fa-chevron-right"></i>
+          </div>
         </header>
       </div>
 
       <main>
-        <section class="program" id="program">
+        <section class="logo">
           <div class="container">
-            <h3 class="title">Main program</h3>
+            <h3>Genshin impact Logo</h3>
             <hr />
-            <div class="program-item">
-              <img src="images/lecture.png" alt="lecture illustration" />
-              <h3>Keynote speeches</h3>
-              <p>Expert insights on Genshin Impact's development, trends, and updates at the Summit.</p>
+            <p>Genshin Impact was created by Chinese video game developer miHoYo and released worldwide on September 28, 2020.</p>
+            <div class="logo-img">
+              <img src="images/Genshin_Impact_logo.png" alt="logo of Genshin Impact" />
             </div>
-            <div class="program-item">
-              <img src="images/workshop.png" alt="workshop illustration" />
-              <h3>Interactive workshops and Q&A</h3>
-              <p class="description">Connect with Genshin Impact developers and creators at the Summit for insights into the game's development.</p>
-            </div>
-            <div class="program-item">
-              <img src="images/gameplay.png" alt="gameplay illustration" />
-              <h3>Live gameplay</h3>
-              <p class="description">Compete and test skills in live gameplay sessions and tournaments at the Summit.</p>
-            </div>
-            <div class="program-item">
-              <img src="images/discussion.png" alt="discussion illustration" />
-              <h3>Panel discussions</h3>
-              <p class="description">
-                Gain insights on the game's lore, character design, and soundtrack production in panel discussions at the Summit.
-              </p>
-            </div>
-            <div class="program-item">
-              <img src="images/prizes.png" alt="prizes illustration" />
-              <h3>Swag bags and prizes</h3>
-              <p class="description">Win prizes and swag bags throughout the Summit for added excitement and participation incentives.</p>
-            </div>
-            <a href="#" class="see-program">see the whole program</a>
-            <button class="btn">Join Summit 2023</button>
           </div>
         </section>
 
-        <section class="container speakers" id="speakers">
-          <h3 class="title">Featured speakers</h3>
-          <hr class="title-separator" />
+        <section class="container summits">
+          <h3>See past Genshin Summits</h3>
+          <hr />
+          <p>Take a look at the last Genshin Impact Summits which took place live online.</p>
+          <div class="summit-item">
+            <a href="#">
+              <div class="overlay">
+                <div class="info">
+                  <h3>3.6</h3>
+                  <p>Genshin impact update</p>
+                </div>
+              </div>
+              <img src="images/genshin_3.6_update.jpg" alt="image of 3.6 genshin update" />
+            </a>
+          </div>
+          <div class="summit-item">
+            <a href="#">
+              <div class="overlay">
+                <div class="info">
+                  <h3>3.5</h3>
+                  <p>Genshin impact update</p>
+                </div>
+              </div>
+              <img src="images/genshin_3.5_update.jpg" alt="image of 3.5 genshin update" />
+            </a>
+          </div>
         </section>
-
         <section class="partners" id="partners">
           <h3>Partners</h3>
           <hr />

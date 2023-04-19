@@ -1,0 +1,48 @@
+@import 'colors.scss';
+
+.partners {
+  @include flex-column;
+
+  background-color: $dark;
+  color: $white;
+  align-items: center;
+  padding: $xl 0;
+  gap: $md;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    border: none;
+    background-color: $accent;
+    width: 3em;
+    height: 3px;
+  }
+
+  .partners-logo {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $lg;
+
+    li {
+      display: inline;
+    }
+
+    img {
+      filter: grayscale(100%);
+      width: 9em;
+      height: 3em;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .partners {
+    .partners-logo {
+      gap: $xl;
+      margin-top: $lg;
+    }
+  }
+}
