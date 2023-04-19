@@ -17,7 +17,8 @@
   }
 
   .speaker-item {
-    display: flex;
+    @include flex-row;
+
     margin: $lg 0;
     gap: $md;
 
@@ -43,8 +44,8 @@
     }
 
     .info {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
+
       flex-wrap: wrap;
       gap: $sm;
       width: 100%;
@@ -85,7 +86,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .speakers {
     grid-template-columns: 1fr 1fr;
     gap: $sm;

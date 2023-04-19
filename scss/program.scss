@@ -3,15 +3,16 @@
 @import 'mixins.scss';
 
 .program {
+  @include flex-row;
+
   background-image: url(../images/program_bg.png);
   background-repeat: repeat;
   color: $white;
-  display: flex;
   padding: $xl $md;
 
   .container {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+
     align-items: center;
 
     .title {
@@ -27,14 +28,21 @@
       display: grid;
       grid-template-columns: 25% 40% 35%;
       background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       padding: $md;
       margin: $sm 0;
+      cursor: pointer;
+
+      &:hover {
+        @include border-grey;
+      }
 
       img {
         margin: auto;
       }
 
       h3 {
+        @include flex-row;
         @include flex-start-center;
 
         color: $accent;
@@ -43,6 +51,7 @@
       }
 
       p {
+        @include flex-row;
         @include flex-start-center;
       }
     }
@@ -60,7 +69,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .program {
     .container {
       display: grid;

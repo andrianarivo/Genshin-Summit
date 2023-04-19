@@ -5,12 +5,12 @@
 .logo {
   padding: $xl $md;
   text-align: center;
-  border-bottom: 1px solid $grey;
-  border-top: 1px solid $grey;
+  border-bottom: $greyBorder;
+  border-top: $greyBorder;
 
   .container {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+
     align-items: center;
 
     h3 {
@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .logo {
     .container {
       .logo-img {

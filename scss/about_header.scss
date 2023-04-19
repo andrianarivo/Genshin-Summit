@@ -8,8 +8,8 @@
   }
 
   header {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+
     align-items: center;
     justify-content: center;
     padding: $xl $md;
@@ -33,8 +33,9 @@
     }
 
     .description.mobile {
+      @include border-grey;
+
       background-color: $white;
-      border: 1px solid $grey;
       padding: $md;
     }
 
@@ -60,10 +61,11 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .header-style {
     .header-top {
-      display: flex;
+      @include flex-row;
+
       background-color: $dark;
       padding: $sm 0;
       color: $white;
@@ -111,8 +113,9 @@
       }
 
       .description.desktop {
+        @include border-grey;
+
         background-color: $white;
-        border: 1px solid $grey;
         padding: $md;
         display: block;
         max-width: 50%;

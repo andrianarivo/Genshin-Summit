@@ -2,7 +2,8 @@
 @import 'spacing.scss';
 
 nav {
-  display: flex;
+  @include flex-row;
+
   align-items: center;
   padding: 0 $md;
   color: $dark;
@@ -15,7 +16,8 @@ nav {
   }
 
   .container {
-    display: flex;
+    @include flex-row;
+
     position: fixed;
     visibility: hidden;
     top: 0;
@@ -42,8 +44,8 @@ nav {
     }
 
     ul {
-      display: flex;
-      flex-direction: column;
+      @include flex-column;
+
       padding: $xl 0 0 $md;
 
       li {
@@ -59,7 +61,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   nav {
     background-color: $white;
     box-shadow: 0 1px 2px $grey;
@@ -71,11 +73,11 @@ nav {
     }
 
     .container {
-      display: flex;
-      flex-direction: row;
+      @include container;
+      @include flex-row;
+
       justify-content: space-between;
       position: relative;
-      width: $max-width;
       height: auto;
       align-items: center;
       background-color: $white;
@@ -97,8 +99,15 @@ nav {
         display: inline-flex;
         flex-direction: row;
         align-items: center;
-        gap: $xl;
         padding: 0;
+
+        @media screen and (min-width: 1201px) {
+          gap: $xl;
+        }
+
+        @media (min-width: 769px) and (max-width: 1200px) {
+          gap: $md;
+        }
 
         li {
           &:nth-child(1) {
@@ -109,13 +118,20 @@ nav {
             font-size: 1rem;
             color: $dark;
             font-weight: 700;
-          }
-        }
 
-        .campaign {
-          border: 5px solid $accent;
-          color: $accent;
-          padding: 0.3em 1em;
+            &:hover {
+              color: $accent;
+            }
+          }
+
+          .campaign {
+            border: 5px solid $accent;
+            padding: 0.3em 1em;
+
+            a {
+              color: $accent;
+            }
+          }
         }
       }
     }

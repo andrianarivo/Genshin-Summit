@@ -49,7 +49,7 @@ const hamburgerMenu = document.querySelector('#hamburger');
 const menuContainer = document.querySelector('#menu');
 const speakersContainer = document.querySelector('#speakers');
 
-const isOnMobile = () => window.screen.width < 768;
+const isOnMobile = () => window.screen.width < 769;
 
 const hideMenu = () => {
   menuContainer.style.visibility = 'hidden';
@@ -71,6 +71,7 @@ const createSpeaker = (speaker) => {
 
   const img = document.createElement('img');
   img.src = speaker.img;
+  img.alt = `profile picture of ${speaker.name}`;
 
   imgElement.appendChild(imgBackground);
   imgElement.appendChild(img);

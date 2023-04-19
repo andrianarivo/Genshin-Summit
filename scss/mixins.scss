@@ -1,4 +1,5 @@
 @import 'spacing.scss';
+@import 'colors.scss';
 
 @mixin reset {
   margin: 0;
@@ -9,7 +10,6 @@
 }
 
 @mixin flex-start-center {
-  display: flex;
   justify-content: flex-start;
   align-items: center;
 }
@@ -22,10 +22,33 @@
   margin: $md auto;
 }
 
+@mixin mx-auto {
+  margin: 0 auto;
+}
+
 @mixin container {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1201px) {
+    @include mx-auto;
+
     width: $max-width;
-    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    @include mx-auto;
+
+    width: $medium-width;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    @include mx-auto;
+
+    width: $min-width;
+  }
+
+  @media (max-width: 575px) {
+    @include mx-auto;
+
+    width: inherit;
   }
 }
 
@@ -33,4 +56,18 @@
   @media screen and (max-width: 768px) {
     display: none;
   }
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin border-grey {
+  border: $greyBorder;
 }

@@ -1,10 +1,10 @@
 @import 'colors.scss';
 
 .partners {
+  @include flex-column;
+
   background-color: $dark;
   color: $white;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding: $xl 0;
   gap: $md;
@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .partners {
     .partners-logo {
       gap: $xl;

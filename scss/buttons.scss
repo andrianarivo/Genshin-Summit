@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'mixins.scss';
 
 @mixin button-filled {
   background-color: $accent;
@@ -12,9 +13,10 @@
 }
 
 @mixin button-outlined {
+  @include border-grey;
+
   background-color: $white;
   border-radius: 0.2em;
-  border: 1px solid $grey;
   color: inherit;
   padding: 0.7em;
   outline: inherit;

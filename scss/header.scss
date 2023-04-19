@@ -24,8 +24,8 @@
   }
 
   header {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
+
     padding: $xl $md;
     gap: $sm;
     font-weight: 700;
@@ -58,13 +58,13 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .header-style {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
 
     .header-top {
-      display: flex;
+      @include flex-row;
+
       background-color: $dark;
       padding: $sm 0;
       color: $white;

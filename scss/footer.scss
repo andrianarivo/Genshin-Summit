@@ -3,12 +3,14 @@ footer {
   gap: $sm;
 
   .container {
-    display: flex;
+    @include flex-row;
+
     justify-content: flex-start;
     align-items: center;
 
     .cc-logo {
-      display: flex;
+      @include flex-row;
+
       flex: 1;
       align-items: center;
       gap: $sm;
@@ -42,7 +44,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   footer {
     .container {
       .cc-info {
