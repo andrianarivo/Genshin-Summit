@@ -40,8 +40,6 @@ variety of community activities, such as keynote speeches, interactive workshops
 events. The Summit offers attendees a chance to connect with fellow fans from around the world, gain insights into the game's development, and
 participate in exciting events and activities.
 
-> Take a look at the video introduction of the project [here](https://www.loom.com/share/fb8cd525d1fe43d5a40df414e0e34277).
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -70,7 +68,8 @@ participate in exciting events and activities.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://andrianarivo.github.io/capstone-1/)
+- Take a look at the video introduction of the project [here](https://www.loom.com/share/fb8cd525d1fe43d5a40df414e0e34277).
+- [Live Demo Link](https://andrianarivo.github.io/Genshin-Summit/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
