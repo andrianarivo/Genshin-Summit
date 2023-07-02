@@ -175,6 +175,8 @@ const menuItems = document.querySelectorAll('.menu-item');
 for (let i = 0; i < menuItems.length; i += 1) {
   const menuItem = menuItems[i];
   menuItem.addEventListener('click', () => {
-    hideMenu();
+    if (isOnMobile()) {
+      hideMenu();
+    }
   });
 }
